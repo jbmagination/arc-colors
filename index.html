@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arc browser detection</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        :root {
+            color-scheme: light dark;
+        }
+        * {
+            font-family: Helvetica;
+        }
+        body {
+            padding-left: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Arc theme data remover</h1>
+        <h2>What is this for?</h2>
+        <p>Arc has a setting under <i>Advanced</i> > <i>Allow website to get your theme data</i>. This setting is on by default.</p>
+        <p>However, in certain Arc versions, your setting is not respected in Little Arc windows, and in this case Little Arc's theme data will always be shared.</p>
+        <p><img src="./little-arc.png" width="50%"></img></p>
+        <p>This is likely a bug - I've reported it to The Browser Company. In the meantime, this extension will remove the data directly after it is added.</p>
+        <h2>How do I install it?</h2>
+        <p>Once you've <a href="https://github.com/jbmagination/arc-colors/releases/latest/download/arc-colors.crx">downloaded the extension</a>, visit <a href="arc://extensions">arc://extensions</a>. Enable <i>Developer mode</i> in the top-right corner, then drag and drop the <b>arc-colors.crx</b> file onto the Arc window.</p>
+        <p>That's it! My <a href="https://jbmagination.com/ArcDetectionPoC">Arc detection PoC</a> should no longer work, and no theme data should appear on <a href="https://arc.net/colors.html">Arc's color palette testing website</a>.</p>
+    </body>
+</html>
